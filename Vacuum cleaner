@@ -1,0 +1,42 @@
+roomA = input("Enter the state of Room A (Clean/Dirty): ")
+roomB = input("Enter the state of Room B (Clean/Dirty): ")
+location = input("Enter the vacuum location (A/B): ")
+
+if location == "A":
+    if roomA == "Dirty":
+        print("Room A is dirty.")
+        print("Cleaning Room A...")
+        roomA = "Clean"
+    else:
+        print("Room A is already clean.")
+
+    print("Moving to Room B...")
+
+    if roomB == "Dirty":
+        print("Room B is dirty.")
+        print("Cleaning Room B...")
+        roomB = "Clean"
+    else:
+        print("Room B is already clean.")
+
+elif location == "B":
+    if roomB == "Dirty":
+        print("Room B is dirty.")
+        print("Cleaning Room B...")
+        roomB = "Clean"
+    else:
+        print("Room B is already clean.")
+
+    print("Moving to Room A...")
+
+    if roomA == "Dirty":
+        print("Room A is dirty.")
+        print("Cleaning Room A...")
+        roomA = "Clean"
+    else:
+        print("Room A is already clean.")
+
+print("\nFinal State")
+print("Room A:", roomA)
+print("Room B:", roomB)
+print("Cleaning Completed!")
